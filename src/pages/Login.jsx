@@ -54,7 +54,7 @@ const Login = () => {
 
       {/* <!-- Sign Up Link --> */}
       <div class="mt-6 text-center">
-        <p class="text-sm text-gray-600">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Sign up</a></p>
+        <p class="text-sm text-gray-600">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Register</a></p>
       </div>
     </form>
   </div>
