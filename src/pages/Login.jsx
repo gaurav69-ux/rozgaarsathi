@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
 
@@ -10,8 +11,11 @@ const Login = () => {
     <>
     
     <main class="bg-gray-100 flex items-center justify-center min-h-screen">
+
   <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+
     <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Login</h2>
+    
     <form>
       {/* <!-- Email Input --> */}
       <div class="mb-4">
@@ -42,9 +46,7 @@ const Login = () => {
       {/* <!-- Submit Button --> */}
       <button
         type="submit"
-        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-      >
-        Login
+        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Login
       </button>
 
       {/* <!-- Forgot Password Link -->
@@ -54,8 +56,11 @@ const Login = () => {
 
       {/* <!-- Sign Up Link --> */}
       <div class="mt-6 text-center">
-        <p class="text-sm text-gray-600">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Register</a></p>
+        <p class="text-sm text-gray-600">Don't have an account?
+           <Link to="/Registration" class="text-blue-600 hover:underline">Register</Link>
+        </p>
       </div>
+
     </form>
   </div>
 </main>

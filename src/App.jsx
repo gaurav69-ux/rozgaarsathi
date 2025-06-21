@@ -3,6 +3,8 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import  Login  from './pages/Login'
 import Homepage from './pages/Homepage'
+import About from './pages/About'
+import Registration from './pages/Registration'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 
@@ -18,6 +20,8 @@ const App = () => {
         <>
           <Navbar />
           <Homepage />
+          <Footer />
+          
         </>
       )},
 
@@ -27,9 +31,29 @@ const App = () => {
         <>
           <Navbar />
           <Login />
+          <Footer />
         </>
-      )
-    },
+      )},
+
+       {
+      path: "/About",
+      element: (
+        <>
+          <Navbar />
+          <About />
+          <Footer />
+        </>
+      )},
+
+         {
+      path: "/Registration",
+      element: (
+        <>
+          <Navbar />
+          <Registration />
+          <Footer />
+        </>
+      )},
   ]);
 
   return (
@@ -41,6 +65,8 @@ const App = () => {
       {/* <Homepage /> */}
 
     {/* <Footer /> */}
+
+    {/* <Registration/> */}
 
       <RouterProvider router={router} />
 
