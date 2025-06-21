@@ -1,19 +1,48 @@
 import React from 'react'
-import Header from './components/Header'
 import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 import  Login  from './pages/Login'
 import Homepage from './pages/Homepage'
+import { createBrowserRouter } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
+
+
+// Create a router for the application
 
 const App = () => {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <>
+          <Navbar />
+          <Homepage />
+        </>
+      )},
+
+    {
+      path: "/Login",
+      element: (
+        <>
+          <Navbar />
+          <Login />
+        </>
+      )
+    },
+  ]);
+
   return (
     <>
-    <Header />
+    {/* <Navbar /> */}
 
-     <Login/>
+     {/* <Login/> */}
 
-      <Homepage />
+      {/* <Homepage /> */}
 
-    <Footer />
+    {/* <Footer /> */}
+
+      <RouterProvider router={router} />
 
     </>
   )
