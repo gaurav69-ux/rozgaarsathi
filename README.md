@@ -1,4 +1,4 @@
-Getting Started
+Getting Started 💻
 
 To start the project locally, follow these steps:
 
@@ -7,5 +7,5 @@ To start the project locally, follow these steps:
 - Start the development server by running npm run dev in the terminal.
 - The project should now be running locally, accessible via your browser.
 
-Contact me :
+📩 Contact me :
 For any help regarding the project, please contact me at: gauravdurge35@gmail.com
