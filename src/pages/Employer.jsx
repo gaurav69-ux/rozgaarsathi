@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 function Employer() {
   return (
@@ -8,7 +10,9 @@ function Employer() {
                {/* <!-- Registration Form Section --> */}
   <section class="py-12 bg-white">
     <div class="container mx-auto px-4 max-w-lg">
-      <h2 class="text-3xl font-bold text-center mb-6">Register as Employer</h2>
+      <h2 class="text-3xl font-bold text-center mb-6">
+        
+        Register as Employer</h2>
       <p class="text-center mb-8">Fill in your details to post local job opportunities.</p>
       <div id="registration-form" class="space-y-4">
         <form  >
@@ -46,7 +50,11 @@ function Employer() {
           <label for="description" class="block text-sm font-medium text-gray-700">Business Description (Optional)</label>
           <textarea id="description" rows="4" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
         </div>
+
+        <Link to="/Employerdash">
         <button id="submit-btn" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Submit</button>
+        </Link>
+        
         <p id="form-message" class="text-center text-sm text-red-600 hidden">Please fill all required fields.</p>
         </form>
       </div>

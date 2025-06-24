@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import  Login  from './pages/Login'
+import Navbar2 from './components/Navbar2'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
 import Signup from './pages/Signup'
@@ -9,6 +10,12 @@ import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 import Jobsekeer from './pages/Jobsekeer'
 import Employer from './pages/Employer'
+import Dashboard from './pages/Dashboard'
+import Joblisting from './pages/Joblisting'
+import Employerdash from './pages/Employerdash'
+import Jobposting from './pages/Jobposting'
+import Editprofile from './pages/Editprofile'
+
 
 
 // Create a router for the application
@@ -17,21 +24,20 @@ const App = () => {
 
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/Homepage",
       element: (
         <>
           <Navbar />
           <Homepage />
           <Footer />
-          
         </>
       )},
 
     {
-      path: "/Login",
+      path: "/",
       element: (
         <>
-          <Navbar />
+          <Navbar2 />
           <Login />
           <Footer />
         </>
@@ -61,7 +67,7 @@ const App = () => {
       path: "/Jobsekeer",
       element: (
         <>
-          <Navbar />
+          {/* <Navbar2 /> */}
           <Jobsekeer />
           <Footer />
         </>
@@ -71,11 +77,62 @@ const App = () => {
       path: "/Employer",
       element: (
         <>
-          <Navbar />
+          {/* <Navbar2 /> */}
           <Employer />
           <Footer />
         </>
       )},
+
+        {
+      path: "/Dashboard",
+      element: (
+        <>
+          <Navbar />
+          <Dashboard />
+          <Footer />
+        </>
+      )},
+
+       {
+      path: "/Joblisting",
+      element: (
+        <>
+          <Navbar />
+          <Joblisting />
+          <Footer />
+        </>
+      )},
+
+       {
+      path: "/Employerdash",
+      element: (
+        <>
+          <Navbar />
+          <Employerdash />
+          <Footer />
+        </>
+      )},
+
+       {
+      path: "/Jobposting",
+      element: (
+        <>
+          <Navbar />
+          <Jobposting />
+          <Footer />
+        </>
+      )},
+
+        {
+      path: "/Editprofile",
+      element: (
+        <>
+          <Navbar />
+          <Editprofile />
+          <Footer />
+        </>
+      )},
+     
   ]);
 
   return (
