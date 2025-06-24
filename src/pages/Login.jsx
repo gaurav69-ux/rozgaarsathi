@@ -57,7 +57,7 @@ const Login = () => {
       {/* <!-- Sign Up Link --> */}
       <div class="mt-6 text-center">
         <p class="text-sm text-gray-600">Don't have an account?
-           <Link to="/Registration" class="text-blue-600 hover:underline">Register</Link>
+           <Link to="/Signup" class="text-blue-600 hover:underline">Sign up</Link>
         </p>
       </div>
 
@@ -66,7 +66,6 @@ const Login = () => {
 </main>
     
     </>
-  )
-}
+  )}
 
 export default Login

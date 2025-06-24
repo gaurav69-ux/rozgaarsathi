@@ -4,9 +4,11 @@ import Navbar from './components/Navbar'
 import  Login  from './pages/Login'
 import Homepage from './pages/Homepage'
 import About from './pages/About'
-import Registration from './pages/Registration'
+import Signup from './pages/Signup'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
+import Jobsekeer from './pages/Jobsekeer'
+import Employer from './pages/Employer'
 
 
 // Create a router for the application
@@ -46,11 +48,31 @@ const App = () => {
       )},
 
          {
-      path: "/Registration",
+      path: "/Signup",
       element: (
         <>
           <Navbar />
-          <Registration />
+          <Signup />
+          <Footer />
+        </>
+      )},
+
+       {
+      path: "/Jobsekeer",
+      element: (
+        <>
+          <Navbar />
+          <Jobsekeer />
+          <Footer />
+        </>
+      )},
+
+       {
+      path: "/Employer",
+      element: (
+        <>
+          <Navbar />
+          <Employer />
           <Footer />
         </>
       )},

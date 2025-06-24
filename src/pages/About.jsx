@@ -8,9 +8,9 @@ const About = () => {
 
   {/* <!-- About Section --> */}
   <section class="container mx-auto px-4 py-12">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-6">About Rozgaargadi</h2>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6">About RozgaarSathi</h2>
     <p class="text-gray-600 mb-4">
-      Rozgaargadi is a platform built to empower local communities by connecting job seekers with employment opportunities right in their neighborhoods. Whether you're looking for work in agriculture, retail, construction, or other local trades, Rozgaargadi makes it easy to find jobs that match your skills and location.
+      RozgaarSathi is a platform built to empower local communities by connecting job seekers with employment opportunities right in their neighborhoods. Whether you're looking for work in agriculture, retail, construction, or other local trades, RozgaarSathi makes it easy to find jobs that match your skills and location.
     </p>
     <p class="text-gray-600 mb-4">
       Our mission is to bridge the gap between employers and workers in rural and small-town areas, ensuring everyone has access to meaningful work. We believe in keeping things simple, so our platform is designed to be easy to use, even with basic internet access.

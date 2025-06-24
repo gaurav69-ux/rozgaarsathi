@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Registration() {
+function Signup() {
   return (
     <>
     
@@ -39,7 +39,7 @@ function Registration() {
           </select>
         </div>
 
-        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300">Register</button>
+        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300">Sign up</button>
       
       </form>
 
@@ -58,4 +58,4 @@ function Registration() {
   )
 }
 
-export default Registration
+export default Signup;

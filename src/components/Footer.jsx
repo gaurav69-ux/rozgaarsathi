@@ -6,8 +6,8 @@ const Footer = () => {
         <footer className="bg-gray-800 text-white text-center p-10">
       <p> Thank you For Visiting Our  Website 😊</p>
       <br/>
-        <p>&copy; 2025 rozgaargadi. All rights reserved.</p>
-        <p>Contact us: support@rozgaargadi.com</p>
+        <p>&copy; 2025 rozgaarSathi. All rights reserved.</p>
+        <p>Contact us: gauravdurge35@gmail.com</p>
     </footer>
     </div>
 

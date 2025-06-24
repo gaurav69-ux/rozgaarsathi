@@ -1,89 +1,59 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Homepage = () => {
+
+export const Homepage = () => {
   return (
+
     <>
-    
-    
 
-    
-    
-    <main class="max-w-4xl mx-auto p-4">
-         
-        <section class="mb-6">
-            <div class="flex flex-col md:flex-row gap-4">
-                {/* <input id="searchInput" type="text" placeholder="Search jobs..." class="p-2 border rounded-md flex-1"> */}
-                <select id="villageFilter" class="p-2 border rounded-md">
-                    <option value="">All Villages</option>
-                    <option value="Village A">Village A</option>
-                    <option value="Village B">Village B</option>
-                    <option value="Village C">Village C</option>
-                </select>
-                <select id="jobTypeFilter" class="p-2 border rounded-md">
-                    <option value="">All Job Types</option>
-                    <option value="Agriculture">Agriculture</option>
-                    <option value="Retail">Retail</option>
-                    <option value="Construction">Construction</option>
-                </select>
-            </div>
-        </section>
+  
+  <section class="bg-blue-100 py-12 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4">Find Your Dream Job Locally</h2>
+      <p class="text-lg mb-6">RozgaarSathi connects job seekers in rural areas with employers in agriculture, retail, construction, and more.</p>
+      <div class="space-x-4">
 
-        {/* <!-- Job Listings --> */}
-        <section id="jobListings" class="grid gap-4">
-            {/* <!-- Sample Job Card (will be populated by JS) --> */}
-            <div class="job-card bg-white">
-                <h2 class="text-xl font-semibold">Farm Worker</h2>
-                <p><strong>Village:</strong> Village A</p>
-                <p><strong>Type:</strong> Agriculture</p>
-                <p><strong>Description:</strong> Help with planting and harvesting crops.</p>
-                <p><strong>Contact:</strong> farmer@example.com</p>
-            </div>
-        </section>
+        <Link to="/Jobsekeer" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Register as Job Seeker</Link>
+        <Link to="/Employer" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">Register as Employer</Link>
 
-        {/* <!-- Post a Job Form --> */}
-        <section class="mt-8 bg-white p-6 rounded-md shadow-md">
+      </div>
+    </div>
+  </section>
 
-            <h2 class="text-xl font-semibold mb-4">Post a New Job</h2>
-
-            <form id="jobForm" class="flex flex-col gap-4">
-
-                <input type="text" id="jobTitle" placeholder="Job Title" class="p-2 border rounded-md" required />
-
-                <select id="jobVillage" class="p-2 border rounded-md" required>
-                    <option value="">Select Village</option>
-                    <option value="Village A">Village A</option>
-                    <option value="Village B">Village B</option>
-                    <option value="Village C">Village C</option>
-                </select>
-
-                <select id="jobType" class="p-2 border rounded-md" required>
-                    <option value="">Select Job Type</option>
-                    <option value="Agriculture">Agriculture</option>
-                    <option value="Retail">Retail</option>
-                    <option value="Construction">Construction</option>
-                </select>
-
-                <textarea id="jobDescription" placeholder="Job Description" class="p-2 border rounded-md" required></textarea>
-                
-                <input type="email" id="jobContact" placeholder="Contact Email" class="p-2 border rounded-md" required />
-
-                <button type="submit" class="bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700">Post Job</button>
-
-            </form>
+  
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8">Why Choose RozgaarSathi?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <h4 class="text-xl font-semibold mb-2">Local Opportunities</h4>
+          <p>Find jobs in your village or nearby areas in agriculture, retail, and construction.</p>
+        </div>
+        <div class="text-center">
+          <h4 class="text-xl font-semibold mb-2">Simple & Accessible</h4>
+          <p>Easy-to-use platform designed for users with basic internet access.</p>
+        </div>
+        <div class="text-center">
+          <h4 class="text-xl font-semibold mb-2">Free to Use</h4>
+          <p>Connect with employers or job seekers at no cost.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-        </section>
+  <section class="bg-blue-600 text-white py-12 text-center">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+      <p class="mb-6">Join RozgaarSathi today and take the first step toward your next opportunity.</p>
+      {/* <a href="register.html" class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-200">Join Now</a> */}
+    </div>
+  </section>
 
-    
-    </main>
 
-    {/* <!-- Footer --> */}
-    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
-    </footer>
-
-    
     </>
-  )
-}
 
+
+  )}
 export default Homepage
