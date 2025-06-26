@@ -1,29 +1,36 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
-        <footer className="bg-gray-800 text-white text-center p-10">
-      <p> Thank you For Visiting Our  Website 😊</p>
-      <br/>
-        <p>&copy; 2025 rozgaarSathi. All rights reserved.</p>
-        <p>Contact us: gauravdurge35@gmail.com</p>
+    <footer className="bg-gradient-to-r from-blue-700 via-indigo-800 to-purple-800 text-white py-8 px-4 border-t border-indigo-900">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-6">
+        <div className="flex flex-col text-center md:text-left w-full">
+          <div className="text-lg font-semibold text-center ">
+            Thank you for visiting our website{" "}
+            <span className="text-yellow-300">😊</span>
+          </div>
+          <div className="text-center text-sm my-2 mb-7">
+            <span>
+              Contact us:{" "}
+              <Link
+                to="mailto:gauravdurge35@gmail.com"
+                className="text-yellow-300 hover:underline"
+              >
+                gauravdurge35@gmail.com
+              </Link>
+            </span>
+          </div>
+          <hr className="my-4 border-indigo-300 opacity-40" />
+        </div>
+
+        <div className="text-sm text-gray-200 text-center">
+          &copy; 2025{" "}
+          <span className="font-bold text-yellow-300">RozgaarSathi</span>. All
+          rights reserved.
+        </div>
+      </div>
     </footer>
-    </div>
+  );
+};
 
-
-  //     <>
-      
-  //      <footer class="bg-blue-600 text-white py-4">
-  //   <div class="container mx-auto px-4 text-center">
-  //     <p>&copy; 2025 Rozgaargadi. All rights reserved.</p>
-  //     <p>Contact us: support@rozgaargadi.com</p>
-  //   </div>
-  // </footer>
-
-  //     </>
-
-  )
-}
-
-export default Footer
+export default Footer;
