@@ -1,13 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
+<<<<<<< HEAD
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
+=======
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 639a5a1690fb0b1bb04a5ea63fd8e0166fcec49a
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -21,4 +28,8 @@
     "mongoose": "^8.16.2",
     "nodemon": "^3.1.10"
   }
+=======
+  "type": "commonjs",
+  "description": ""
+>>>>>>> 639a5a1690fb0b1bb04a5ea63fd8e0166fcec49a
 }
