@@ -17,4 +17,7 @@ app.use(
 app.use(urlencoded({ extended: true, limit: "16kb" }));
 app.use(cookiesParser());
 
+import userRoute from "./routes/user.route.js";
+app.use("/api/v1/users", userRoute);
+
 export default app;
