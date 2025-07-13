@@ -100,3 +100,15 @@ export const getUserProfile = asyncHandler((req, res) => {
     .status(200)
     .json(new ApiResponse(200, req.user, "logged in user fetch successfully"));
 });
+
+export const logoutUser = asyncHandler((req, res) => {
+  const options = {
+    httpOnly: true,
+    secure: true,
+  };
+
+  return res
+    .status(200)
+    .clearCookie("accessToken", options)
+    .json(new ApiResponse(200, {}, "user logged out successfully"));
+});
