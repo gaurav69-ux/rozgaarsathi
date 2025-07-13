@@ -94,3 +94,9 @@ export const login = asyncHandler(async (req, res) => {
       )
     );
 });
+
+export const getUserProfile = asyncHandler((req, res) => {
+  return res
+    .status(200)
+    .json(new ApiResponse(200, req.user, "logged in user fetch successfully"));
+});
