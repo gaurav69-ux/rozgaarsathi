@@ -1,5 +1,7 @@
 # Rozgaarsathi - Cloud Infrastructure Showcase
 
+![Rozgaarsathi Homepage](./assets/homepage.png)
+
 Rozgaarsathi is a modern web application designed to connect local talent with local opportunities, empowering workers and employers across India. 
 
 **This repository highlights the Cloud Engineering, DevOps, and System Design aspects of the project.**
@@ -11,6 +13,9 @@ As a Cloud Engineer, my focus on this project was to establish a robust, scalabl
 - **End-to-End CI/CD Pipeline**: Designed and implemented automated workflows using **GitHub Actions**. Code pushes automatically trigger testing, Docker image building, and deployment to production.
 - **Containerization**: Fully containerized the application using **Docker**. Created independent `client` and `server` containers orchestrated via **Docker Compose**, ensuring parity between development and production environments.
 - **AWS Infrastructure Deployment**: Provisioned and configured **AWS EC2** instances to host the application. Secured the server and configured SSH-based automated deployments.
+  
+  ![AWS EC2 Instances](./assets/ec2-instances.png)
+
 - **Cloud Storage Integration**: Integrated **AWS S3** for scalable and secure storage of user-uploaded assets (resumes and profile pictures), offloading file storage from the application server.
 - **Reverse Proxy & Web Server**: Configured **Nginx** to serve the optimized React frontend and act as a reverse proxy, routing API requests securely to the Node.js backend.
 
